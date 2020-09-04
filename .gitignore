@@ -2,6 +2,7 @@
 Thumbs.db
 .s
 .cache
+.vscode
 src/db.json
 src/*.log
 src/node_modules/

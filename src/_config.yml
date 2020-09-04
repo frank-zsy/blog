@@ -11,7 +11,6 @@ author: Frank
 language: zh-CN
 timezone:
 
-
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
