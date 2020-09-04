@@ -1,0 +1,12 @@
+HexoComponent:
+  Component: hexo
+  Provider: alibaba
+  Access: blog
+  Extends:
+    deploy:
+      - Hook: npm install --production && npm run clean && npm run build
+        Path: ./src
+        Pre: true
+  Properties:
+    Region: 'ap-southeast-1'
+    CodeUri: './src'
