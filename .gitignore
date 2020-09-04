@@ -4,6 +4,7 @@ Thumbs.db
 .cache
 .vscode
 src/db.json
+src/bootstrap
 src/*.log
 src/node_modules/
 src/public/
