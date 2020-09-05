@@ -1,9 +1,8 @@
 # commit to git server
 git add .
-git commit -m 
 msg="update blog $(date)"
 if [ -n "$*" ]; then
-	msg="$*"
+  msg="$*"
 fi
 git commit -m "$msg"
 git push origin master
