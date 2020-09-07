@@ -35,9 +35,9 @@ tags: ['Hypertrons']
 
 ## 接口层
 
-首先，Hypertrons 作为一个 [RPA](https://baike.baidu.com/item/rpa/50175182) 开发平台，其主要是做与开源项目相关的跨平台自动化能力，故底层对接的是各种开源生产相关的开放平台（Open platform），首先需要注意的是这里强调的是开放平台，即第一不要求对接的平台或工具是开源的，但第二需要这些平台无论是否开源都必须有开放的接口可被集成。
+首先，Hypertrons 作为一个 [RPA](https://baike.baidu.com/item/rpa/50175182) 开发平台，其主要是做与开源项目相关的跨平台自动化能力，故底层对接的是各种开源生产相关的开放平台（Open platform），首先需要注意的是这里强调的是开放平台，即不要求对接的平台或工具是开源的，但需要这些平台无论是否开源都必须有开放的接口可被集成。
 
-这里的开放平台包括例如 GitHub、GitLab、Gitee 等，这些目前较主流的开源协作平台，事实上这些平台都包含了三种功能特性，即版本控制管理系统托管（git）、协作流程管理（issue、PR/MR）、项目管理等，而例如 [TAPD](https://www.tapd.cn/) 等开放平台则仅包含了项目管理的能力。另外，在开源项目中，自动化测试或 CI/CD 有重要的地位，故需要对接例如 Jenkins 或 Travis 等 CI 服务。其他还包含如邮件服务（Gmail、AliMail...）、IM 服务（Slack、Mattermost）、线上会议服务（Zoom，Tencent meeting）、在线文档服务（Google docs，shimo）等。
+这里的开放平台包括例如 GitHub、GitLab、Gitee 等目前较主流的开源协作平台，事实上这些平台都包含了三种功能特性，即版本控制管理系统托管（git）、协作流程管理（issue、PR/MR）、项目管理（Project）等，而例如 [TAPD](https://www.tapd.cn/) 等开放平台则仅包含了项目管理的能力。另外，在开源项目中，自动化测试或 CI/CD 有重要的地位，故需要对接例如 Jenkins 或 Travis 等 CI 服务。其他还包含如邮件服务（Gmail、AliMail...）、IM 服务（Slack、Mattermost）、线上会议服务（Zoom，Tencent meeting）、在线文档服务（Google docs，shimo）等。
 
 另外，在接口层面，还需要一套特定的 IAM 与配置管理系统。其中 IAM 接口主要是对接 IAM 系统，用于进行统一的项目内跨平台的角色身份管理，而配置管理则定义了整个机器人的运行时配置是如何生成。
 
