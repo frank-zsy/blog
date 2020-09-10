@@ -8,7 +8,8 @@ text {
 }
 .desc_text {
   text-anchor: start;
-  inline-size: 10px;
+  font-size: 18px;
+  color: white;
 }
 .title {
   font-size: 20px;
@@ -35,6 +36,10 @@ rect {
 }
 g {
   visibility: hidden;
+}
+.desc {
+  fill:black;
+  fill-opacity:0.8;
 }
 ]]>
     </style>
@@ -227,12 +232,33 @@ var textMap = new Map([
       "中文": "腾讯会议",
       "EN": "Tencent"
     }
+  ], [
+    "rpa_desc_detail_text", {
+      "中文": "机器人流程自动化（RPA）系统是一种应用程序，它通过模仿最终用户在电脑的手动操方式，提供了另一种方式来使最终用户手动操作流程自动化。",
+      "EN": "Robotic process automation(RPA) system is a kind of application which simulate operations of end users to provide an automation approach."
+    }
+  ], [
+    "digital_space_desc_detail_text", {
+      "中文": "Hypertrons 是一套完全运行在数字空间中的软件机器人运行时引擎，其甚至可以不包含自己的独立的展示页面，而只通过跨平台的操作来进行组织的流程自动化的管理工作。",
+      "EN": "Hypertrons is a runtime engine runs in the digital world which may not have a web page and only automate and manage organization processes."
+    }
   ]
 ]);
 
 function changeLang(btn) {
-  var textElementList = document.getElementsByTagName("text");
   var lang = btn.innerHTML;
+
+  var textElementList = document.getElementsByTagName("text");
+  for (var i = 0; i < textElementList.length; i++) {
+    var elem = textElementList[i];
+    if (!elem.id) continue;
+    var text = textMap.get(elem.id);
+    if (text && text[lang]) {
+      elem.innerHTML = text[lang];
+    }
+  }
+
+  textElementList = document.getElementsByTagName("p");
   for (var i = 0; i < textElementList.length; i++) {
     var elem = textElementList[i];
     if (!elem.id) continue;
@@ -301,6 +327,17 @@ function onPlatformMouseOver(evt) {
   document.getElementById(platformMap.get(evt.target.id)).style.visibility = "visible";
 }
 
+function show(evt, id) {
+  var elem = document.getElementById(id);
+  if (!elem) return;
+  elem.style.visibility = "visible";
+}
+
+function hide(evt, id) {
+  var elem = document.getElementById(id);
+  if (!elem) return;
+  elem.style.visibility = "hidden";
+}
 
 ]]>
     </script>
@@ -308,7 +345,7 @@ function onPlatformMouseOver(evt) {
     <rect id="bg" class="bg" x="0" y ="0" width="600" height="350"/>
 
     <text id="digital_space_text" class="title" x="300" y="26"></text>
-    <rect x="5" y="5" width="590" height="40" />
+    <rect x="5" y="5" width="590" height="40" onmouseenter="show(evt,'digital_space_desc_g')" onmouseleave="hide(evt,'digital_space_desc_g')"/>
     
     <text id="dsl_visual_prog_text" class="subtitle" x="245" y="66"></text>
     <rect x="5" y="50" width="480" height="30" />
@@ -451,7 +488,23 @@ function onPlatformMouseOver(evt) {
     <rect x="490" y="285" width="105" height="30" />
 
     <text class="subtitle" x="542.5" y="165">RPA</text>
-    <rect x="490" y="50" width="105" height="230" />
+    <rect x="490" y="50" width="105" height="230" onmouseenter="show(evt,'rpa_desc_g')" onmouseleave="hide(evt,'rpa_desc_g')"/>
+
+    <g id="rpa_desc_g">
+      <rect class="desc" x="5" y="50" width="480" height="230" />
+      <foreignObject x="10" y="50" width="460" height="200"
+        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <p class="desc_text" id="rpa_desc_detail_text" xmlns="http://www.w3.org/1999/xhtml"></p>
+      </foreignObject>
+    </g>
+
+    <g id="digital_space_desc_g">
+      <rect class="desc" x="5" y="50" width="590" height="230" />
+      <foreignObject x="10" y="50" width="580" height="200"
+        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <p class="desc_text" id="digital_space_desc_detail_text" xmlns="http://www.w3.org/1999/xhtml"></p>
+      </foreignObject>
+    </g>
 
     <text name="lang_btn" id="en_btn_text" x="280" y="330" width="40" height="40" onclick="onLangBtnClick(evt)">EN</text>
     <text name="lang_btn" id="zh_btn_text" x="320" y="330" width="40" height="40" onclick="onLangBtnClick(evt)">中文</text>
