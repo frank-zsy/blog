@@ -31,7 +31,7 @@ tags: ['Hypertrons']
 
 目前整体 Hypertrons 的架构设计如下图所示：
 
-<embed src="https://frank-cdn.opensource-service.com/image/svg/arch.svg?lang=zh" style="width:100%" />
+<embed src="/images/arch.svg?lang=zh" style="width:100%" />
 
 ## 接口层
 
