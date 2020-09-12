@@ -234,7 +234,7 @@ var textMap = new Map([
     }
   ], [
     "rpa_desc_detail_text", {
-      "中文": "机器人流程自动化（RPA）系统是一种应用程序，它通过模仿最终用户在电脑的手动操方式，提供了另一种方式来使最终用户手动操作流程自动化。<br/>Hypertrons 并非传统的 RPA 应用，其对用户的操作模拟并不发生在桌面上，而是发生在数字空间中，通过对可集成开放平台的集成提供有效的自动化定制开发能力。",
+      "中文": "机器人流程自动化（RPA）系统是一种应用程序，它通过模仿最终用户在电脑的手动操作方式，提供了一种方式来使最终用户手动操作流程自动化。<br/>Hypertrons 并非传统的 RPA 应用，其对用户的操作模拟并不发生在桌面上，而是发生在数字空间中，通过对可集成开放平台的集成提供有效的自动化定制开发能力。",
       "EN": "Robotic process automation(RPA) system is a kind of application which simulate operations of end users to provide an automation approach.<br/>Hypertrons is not a traditional RPA application, it simulates the operations on backend rather than on desktop and provides automation customization ability through intergrating open platforms."
     }
   ], [
