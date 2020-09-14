@@ -1,0 +1,42 @@
+# Header
+menu:
+  关于: /about
+  Github:
+    url: https://github.com/frank-zsy
+    icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: 主页
+
+# URL of the Home page image
+index_cover: https://frank-cdn.opensource-service.com/image/home-bg.jpg
+
+# Default post title
+default_post_title: Untitled
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname:
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Baidu tongji
+baidu_tongji: d1aea8a668872578c40c332ce40d6719
+
+# Addthis ID
+addthis:
+
+# set your own favicon
+favicon: http://frank-cdn.opensource-service.com/image/favicon-32x32.ico
+
+# Social Accounts
+github_url: https://github.com/frank-zsy
+linkedin_url: https://www.linkedin.com/in/%E7%94%9F%E5%AE%87-%E8%B5%B5-4942707b/
+mailto: syzhao1988@126.com
