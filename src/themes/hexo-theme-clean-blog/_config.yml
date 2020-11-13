@@ -1,6 +1,6 @@
 # Header
 menu:
-  关于: /about.html
+  关于: /about
   Github:
     url: https://github.com/frank-zsy
     icon: github
