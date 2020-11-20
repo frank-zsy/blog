@@ -1,10 +1,10 @@
 ---
-title: OpenRank 和 Open Galaxy
+title: OpenRank 和 OpenGalaxy
 date: 2020-10-30
 tags: ['开源', '数据分析', '社会网络']
 ---
 
-> 在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](/github_activity_with_wpr)一文中，我详细介绍了一种基于 WPR 的全域项目活跃度分析方法，本文将据此进行深入并进一步形式化，使其成为一种更加通用的全域项目分析方法，我将其命名为 OpenRank，而基于 OpenRank 的图构建方法，可以进一步引申出一种图网络可视化方法，我将其称之为 Open Galaxy，即开源星系。
+> 在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](/github_activity_with_wpr)一文中，我详细介绍了一种基于 WPR 的全域项目活跃度分析方法，本文将据此进行深入并进一步形式化，使其成为一种更加通用的全域项目分析方法，我将其命名为 OpenRank，而基于 OpenRank 的图构建方法，可以进一步引申出一种图网络可视化方法，我将其称之为 OpenGalaxy，即开源星系。
 
 ![opengalaxy_2019](https://frank-cdn.opensource-service.com/image/OpenGalaxy_2019.png)
 
@@ -40,9 +40,9 @@ tags: ['开源', '数据分析', '社会网络']
 
 由此可以看出，OpenRank 可以脱离代码仓库的具体内容，而仅通过全域开发者在不同仓库中的活跃情况来判断项目的影响力，具有极大的创新价值。
 
-# Open Galaxy
+# OpenGalaxy
 
-在上述图网络构造下，我们可以对所有的项目与其关系进行可视化，并得到一副开源世界的全景图，我们将其称为 Open Galaxy——开源星系。
+在上述图网络构造下，我们可以对所有的项目与其关系进行可视化，并得到一副开源世界的全景图，我们将其称为 OpenGalaxy——开源星系。
 
 而在进行可视化之前，我们可以使用聚类算法对项目进行聚类，从而从协作层面观察项目的分类情况，可以使用 Louvain 这样的经典社区发现算法对项目进行聚类。之后可以进行部分裁剪从而使可视化具有可行性，并将规模较大的一些项目群落标注出来。
 
