@@ -1,0 +1,508 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" width="600" height="350" preserveAspectRatio="xMinYMin meet" viewBox="0 0 600 350" onload="onSvgLoad()">
+  <style type="text/css"><![CDATA[
+    text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .desc_text {
+      text-anchor: start;
+      font-size: 16px;
+      color: white;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 12px;
+    }
+    .interfacetitle {
+      font-size: 10px;
+    }
+    rect {
+      stroke: black;
+      stroke-width: 2;
+      fill: transparent;
+      rx: 5;
+      ry: 5;
+    }
+    .bg {
+      fill: lightblue;
+      rx: 0;
+      ry: 0;
+      stroke: none;
+    }
+    g {
+      visibility: hidden;
+    }
+    .desc {
+      fill:black;
+      fill-opacity:0.8;
+    }
+  ]]></style>
+
+  <script type="text/ecmascript"><![CDATA[
+
+    var textMap = new Map([
+      [
+        "digital_space_text", {
+          "中文": "数字空间",
+          "EN": "Digital Space"
+        }
+      ], [
+        "dsl_visual_prog_text", {
+          "中文": "DSL 可视化编程与编排",
+          "EN": "DSL visual programming &amp; DSL visual orchestration"
+        }
+      ], [
+        "lang_btn_text", {
+          "中文": "EN",
+          "EN": "中文"
+        }
+      ], [
+        "workflow_dev_text", {
+          "中文": "DSL 工作流开发（Lua 组件）",
+          "EN": "DSL Workflow Develop(Lua Component)"
+        }
+      ], [
+        "dsl_runtime_text", {
+          "中文": "DSL 运行时（Fengari + Lua 互操作）",
+          "EN": "DSL Runtime(Fengari + Lua interop)"
+        }
+      ], [
+        "dsl_design_text1", {
+          "中文": "DSL 设计",
+          "EN": "DSL Design"
+        }
+      ], [
+        "dsl_design_text2", {
+          "中文": "（非完整 Lua）",
+          "EN": "(Partial Lua)"
+        }
+      ], [
+        "app_core_text", {
+          "中文": "应用核心（Egg.js + TypeScript）",
+          "EN": "Application Core(Egg.js + TypeScript)"
+        }
+      ], [
+        "interface_text", {
+          "中文": "接口层",
+          "EN": "Interfaces"
+        }
+      ], [
+        "open_platform_text", {
+          "中文": "开放平台",
+          "EN": "Open Platform"
+        }
+      ], [
+        "vcs_text1", {
+          "中文": "版本控制",
+          "EN": "VCS"
+        }
+      ], [
+        "vcs_text2", {
+          "中文": "托管",
+          "EN": "hosting"
+        }
+      ], [
+        "collaborate_text1", {
+          "中文": "协作",
+          "EN": "Collaborate"
+        }
+      ], [
+        "collaborate_text2", {
+          "中文": "平台",
+          "EN": "Platform"
+        }
+      ], [
+        "prj_mgr_text1", {
+          "中文": "项目管理",
+          "EN": "Project"
+        }
+      ], [
+        "prj_mgr_text2", {
+          "中文": "平台",
+          "EN": "Management"
+        }
+      ], [
+        "ci_text1", {
+          "中文": "持续集成",
+          "EN": "CI"
+        }
+      ], [
+        "ci_text2", {
+          "中文": "服务",
+          "EN": "Service"
+        }
+      ], [
+        "mail_text1", {
+          "中文": "邮件",
+          "EN": "Mail"
+        }
+      ], [
+        "mail_text2", {
+          "中文": "服务",
+          "EN": "Service"
+        }
+      ], [
+        "im_text1", {
+          "中文": "即时通讯",
+          "EN": "IM"
+        }
+      ], [
+        "im_text2", {
+          "中文": "服务",
+          "EN": "Service"
+        }
+      ], [
+        "meeting_text1", {
+          "中文": "线上会议",
+          "EN": "Online"
+        }
+      ], [
+        "meeting_text2", {
+          "中文": "服务",
+          "EN": "Meeting"
+        }
+      ], [
+        "doc_text1", {
+          "中文": "在线文档",
+          "EN": "Online"
+        }
+      ], [
+        "doc_text2", {
+          "中文": "服务",
+          "EN": "Doc"
+        }
+      ], [
+        "gitee_text", {
+          "中文": "码云",
+          "EN": "Gitee"
+        }
+      ], [
+        "ding_talk_text", {
+          "中文": "钉钉",
+          "EN": "DingTalk"
+        }
+      ], [
+        "wechat_text", {
+          "中文": "微信",
+          "EN": "WeChat"
+        }
+      ], [
+        "ali_mail_text", {
+          "中文": "阿里云企业邮箱",
+          "EN": "Alibaba"
+        }
+      ], [
+        "tencent_mail_text", {
+          "中文": "腾讯企业邮箱",
+          "EN": "Tencent"
+        }
+      ], [
+        "self_host_mail_text", {
+          "中文": "自建邮箱服务",
+          "EN": "Self Host"
+        }
+      ], [
+        "tencent_mail_text", {
+          "中文": "腾讯企业邮箱",
+          "EN": "Tencent"
+        }
+      ], [
+        "self_host_mail_text", {
+          "中文": "自建邮箱服务",
+          "EN": "Self Host"
+        }
+      ], [
+        "yuque_text", {
+          "中文": "语雀",
+          "EN": "YuQue"
+        }
+      ], [
+        "shimo_text", {
+          "中文": "石墨文档",
+          "EN": "shimo"
+        }
+      ], [
+        "tecent_meeting_text", {
+          "中文": "腾讯会议",
+          "EN": "Tencent"
+        }
+      ], [
+        "rpa_desc_detail_text", {
+          "中文": "机器人流程自动化（RPA）系统是一种应用程序，它通过模仿最终用户在电脑的手动操方式，提供了另一种方式来使最终用户手动操作流程自动化。<br/>Hypertrons 并非传统的 RPA 应用，其对用户的操作模拟并不发生在桌面上，而是发生在数字空间中，通过对可集成开放平台的集成提供有效的自动化定制开发能力。",
+          "EN": "Robotic process automation(RPA) system is a kind of application which simulate operations of end users to provide an automation approach.<br/>Hypertrons is not a traditional RPA application, it simulates the operations on backend rather than on desktop and provides automation customization ability through intergrating open platforms."
+        }
+      ], [
+        "digital_space_desc_detail_text", {
+          "中文": "Hypertrons 是一套完全运行在数字空间中的软件机器人运行时引擎，其甚至可以不包含自己的独立的展示页面，而只通过跨平台的操作来进行组织的流程自动化的管理工作。",
+          "EN": "Hypertrons is a runtime engine runs in the digital world which may not have a web page and only automate and manage organization processes."
+        }
+      ]
+    ]);
+
+    function changeLang(btn) {
+      var lang = btn.innerHTML;
+
+      var textElementList = document.getElementsByTagName("text");
+      for (var i = 0; i < textElementList.length; i++) {
+        var elem = textElementList[i];
+        if (!elem.id) continue;
+        var text = textMap.get(elem.id);
+        if (text && text[lang]) {
+          elem.innerHTML = text[lang];
+        }
+      }
+
+      textElementList = document.getElementsByTagName("p");
+      for (var i = 0; i < textElementList.length; i++) {
+        var elem = textElementList[i];
+        if (!elem.id) continue;
+        var text = textMap.get(elem.id);
+        if (text && text[lang]) {
+          elem.innerHTML = text[lang];
+        }
+      }
+
+      var btns = document.getElementsByName("lang_btn");
+      for (var b of btns) {
+        b.style.fill = "black";
+      }
+      btn.style.fill = "white";
+    }
+
+    function onLangBtnClick(evt) {
+      changeLang(evt.target);
+    }
+
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable) {
+          return pair[1];
+        }
+      }
+      return false;
+    }
+
+    function onSvgLoad() {
+      var lang = getQueryVariable("lang");
+      var langBtn = document.getElementById("en_btn_text");
+      if (lang && (lang == "zh" || lang == "zh-cn")) {
+        langBtn = document.getElementById("zh_btn_text");
+      }
+      changeLang(langBtn);
+      var color = getQueryVariable("bg_color");
+      if (color) {
+        document.getElementById("bg").style.fill = color;
+      }
+    }
+
+    var platformMap = new Map([
+      [ "vcs_rect", "vcs_collaborate_platform" ],
+      [ "collaborate_rect", "vcs_collaborate_platform" ],
+      [ "prj_mgr_rect", "proj_mgr_platform" ],
+      [ "ci_rect", "ci_platform" ],
+      [ "mail_rect", "mail_platform" ],
+      [ "im_rect", "im_platform" ],
+      [ "meeting_rect", "meeting_platform" ],
+      [ "doc_rect", "doc_platform" ]
+    ]);
+
+    function clearPlatform() {
+      for (var p of document.getElementsByName("platform")) {
+        p.style.visibility = "hidden";
+      }
+    }
+
+    function onPlatformMouseOver(evt) {
+      if (!platformMap.has(evt.target.id)) return;
+      document.getElementById(platformMap.get(evt.target.id)).style.visibility = "visible";
+    }
+
+    function show(evt, id) {
+      var elem = document.getElementById(id);
+      if (!elem) return;
+      elem.style.visibility = "visible";
+    }
+
+    function hide(evt, id) {
+      var elem = document.getElementById(id);
+      if (!elem) return;
+      elem.style.visibility = "hidden";
+    }
+
+  ]]></script>
+
+  <rect id="bg" class="bg" x="0" y ="0" width="600" height="350"/>
+
+  <text id="digital_space_text" class="title" x="300" y="26"></text>
+  <rect x="5" y="5" width="590" height="40" onmouseenter="show(evt,'digital_space_desc_g')" onmouseleave="hide(evt,'digital_space_desc_g')"/>
+
+  <text id="dsl_visual_prog_text" class="subtitle" x="245" y="66"></text>
+  <rect x="5" y="50" width="480" height="30" />
+
+  <text id="workflow_dev_text" class="subtitle" x="185" y="101"></text>
+  <rect x="5" y="85" width="360" height="30" />
+
+  <text id="dsl_runtime_text" class="subtitle" x="185" y="136"></text>
+  <rect x="5" y="120" width="360" height="30" />
+
+  <text id="dsl_design_text1" class="subtitle" x="427.5" y="108"></text>
+  <text id="dsl_design_text2" class="subtitle" x="427.5" y="128"></text>
+  <rect x="370" y="85" width="115" height="65" />
+
+  <text id="app_core_text" class="subtitle" x="245" y="175"></text>
+  <rect x="5" y="155" width="480" height="40" />
+
+  <text id="interface_text" class="subtitle" x="245" y="220"></text>
+  <rect x="5" y="200" width="480" height="80" />
+
+  <text id="vcs_text1" class="interfacetitle" x="35" y="250.5"></text>
+  <text id="vcs_text2" class="interfacetitle" x="35" y="264.5"></text>
+  <rect id="vcs_rect" x="10" y="240" width="50" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="collaborate_text1" class="interfacetitle" x="100" y="250.5"></text>
+  <text id="collaborate_text2" class="interfacetitle" x="100" y="264.5"></text>
+  <rect id="collaborate_rect" x="65" y="240" width="70" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="prj_mgr_text1" class="interfacetitle" x="175" y="250.5"></text>
+  <text id="prj_mgr_text2" class="interfacetitle" x="175" y="264.5"></text>
+  <rect id="prj_mgr_rect" x="140" y="240" width="70" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="ci_text1" class="interfacetitle" x="240" y="250.5"></text>
+  <text id="ci_text2" class="interfacetitle" x="240" y="264.5"></text>
+  <rect id="ci_rect" x="215" y="240" width="50" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="mail_text1" class="interfacetitle" x="295" y="250.5"></text>
+  <text id="mail_text2" class="interfacetitle" x="295" y="264.5"></text>
+  <rect id="mail_rect" x="270" y="240" width="50" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="im_text1" class="interfacetitle" x="350" y="250.5"></text>
+  <text id="im_text2" class="interfacetitle" x="350" y="264.5"></text>
+  <rect id="im_rect" x="325" y="240" width="50" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="meeting_text1" class="interfacetitle" x="405" y="250.5"></text>
+  <text id="meeting_text2" class="interfacetitle" x="405" y="264.5"></text>
+  <rect id="meeting_rect" x="380" y="240" width="50" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <text id="doc_text1" class="interfacetitle" x="457.5" y="250.5"></text>
+  <text id="doc_text2" class="interfacetitle" x="457.5" y="264.5"></text>
+  <rect id="doc_rect" x="435" y="240" width="45" height="35" onmouseenter="onPlatformMouseOver(evt)" onmouseleave="clearPlatform()"/>
+
+  <g id="vcs_collaborate_platform" name="platform">
+    <text class="subtitle" x="57.5" y="300">GitHub</text>
+    <rect x="5" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="167.5" y="300">GitLab</text>
+    <rect x="115" y="285" width="105" height="30" />
+
+    <text id="gitee_text" class="subtitle" x="275.5" y="300"></text>
+    <rect x="225" y="285" width="105" height="30" />
+  </g>
+
+  <g id="proj_mgr_platform" name="platform">
+    <text class="subtitle" x="57.5" y="300">GitHub</text>
+    <rect x="5" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="167.5" y="300">GitLab</text>
+    <rect x="115" y="285" width="105" height="30" />
+
+    <text id="gitee_text" class="subtitle" x="275.5" y="300"></text>
+    <rect x="225" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="387.5" y="300">TAPD</text>
+    <rect x="335" y="285" width="105" height="30" />
+  </g>
+  
+  <g id="ci_platform" name="platform">
+    <text class="subtitle" x="77.5" y="300">Jenkins</text>
+    <rect x="25" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="187.5" y="300">Travis</text>
+    <rect x="135" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="295.5" y="300">Drone</text>
+    <rect x="245" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="407.5" y="300">Circle</text>
+    <rect x="355" y="285" width="105" height="30" />
+  </g>
+
+  <g id="mail_platform" name="platform">
+    <text class="subtitle" x="102.5" y="300">Gmail</text>
+    <rect x="50" y="285" width="105" height="30" />
+
+    <text id="ali_mail_text" class="subtitle" x="212.5" y="300"></text>
+    <rect x="160" y="285" width="105" height="30" />
+
+    <text id="tencent_mail_text" class="subtitle" x="322.5" y="300"></text>
+    <rect x="270" y="285" width="105" height="30" />
+
+    <text id="self_host_mail_text" class="subtitle" x="432.5" y="300"></text>
+    <rect x="380" y="285" width="105" height="30" />
+  </g>
+
+  <g id="im_platform" name="platform">
+    <text class="subtitle" x="102.5" y="300">Slack</text>
+    <rect x="50" y="285" width="105" height="30" />
+
+    <text class="subtitle" x="212.5" y="300">MatterMost</text>
+    <rect x="160" y="285" width="105" height="30" />
+
+    <text id="ding_talk_text" class="subtitle" x="322.5" y="300"></text>
+    <rect x="270" y="285" width="105" height="30" />
+
+    <text id="wechat_text" class="subtitle" x="432.5" y="300"></text>
+    <rect x="380" y="285" width="105" height="30" />
+  </g>
+
+  <g id="meeting_platform" name="platform">
+    <text class="subtitle" x="322.5" y="300">Zoom</text>
+    <rect x="270" y="285" width="105" height="30" />
+
+    <text id="tecent_meeting_text" class="subtitle" x="432.5" y="300"></text>
+    <rect x="380" y="285" width="105" height="30" />
+  </g>
+
+  <g id="doc_platform" name="platform">
+    <text id="yuque_text" class="subtitle" x="212.5" y="300"></text>
+    <rect x="160" y="285" width="105" height="30" />
+    
+    <text class="subtitle" x="322.5" y="300">Google Docs</text>
+    <rect x="270" y="285" width="105" height="30" />
+
+    <text id="shimo_text" class="subtitle" x="432.5" y="300"></text>
+    <rect x="380" y="285" width="105" height="30" />
+  </g>
+
+  <text id="open_platform_text" class="subtitle" x="542.5" y="300"></text>
+  <rect x="490" y="285" width="105" height="30" />
+
+  <text class="subtitle" x="542.5" y="165">RPA</text>
+  <rect x="490" y="50" width="105" height="230" onmouseenter="show(evt,'rpa_desc_g')" onmouseleave="hide(evt,'rpa_desc_g')"/>
+
+  <g id="rpa_desc_g">
+    <rect class="desc" x="5" y="50" width="480" height="230" />
+    <foreignObject x="10" y="50" width="460" height="200"
+      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <p class="desc_text" id="rpa_desc_detail_text" xmlns="http://www.w3.org/1999/xhtml"></p>
+    </foreignObject>
+  </g>
+
+  <g id="digital_space_desc_g">
+    <rect class="desc" x="5" y="50" width="590" height="230" />
+    <foreignObject x="10" y="50" width="580" height="200"
+      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <p class="desc_text" id="digital_space_desc_detail_text" xmlns="http://www.w3.org/1999/xhtml"></p>
+    </foreignObject>
+  </g>
+
+  <text name="lang_btn" id="en_btn_text" x="280" y="330" width="40" height="40" onclick="onLangBtnClick(evt)">EN</text>
+  <text name="lang_btn" id="zh_btn_text" x="320" y="330" width="40" height="40" onclick="onLangBtnClick(evt)">中文</text>
+
+</svg>

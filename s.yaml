@@ -1,0 +1,25 @@
+edition: 1.0.0
+name: frankblog
+access: "alibaba.blog"
+
+services:
+  function-test:
+    component: hexo
+    actions:
+      pre-deploy:
+        - run: npm install --production
+          path: .
+    props:
+      region: cn-shenzhen
+      service:
+        name: blog
+        description: blog
+      function:
+        name: blog
+        description: blog
+        customContainerConfig:
+          command: '["./blog/start.sh"]'
+        code:
+          src: .
+          excludes:
+            - s
