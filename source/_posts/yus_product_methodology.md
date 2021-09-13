@@ -4,7 +4,7 @@ date: 2020-09-01
 tags: ['读书笔记', '产品设计', '经济学']
 ---
 
-[![cover](https://cdn.frankzhao.cn/image/books/yu%27s_product_methodology.png?imageMogr2/thumbnail/x300)](https://item.jd.com/63204481632.html)
+[![cover](http://cdn.frankzhao.cn/image/books/yu%27s_product_methodology.png?imageMogr2/thumbnail/x300)](https://item.jd.com/63204481632.html)
 
 > 任何业务或流程的设计本质上都是一种产品设计，俞军这本产品方法论虽然很多感觉内容纷乱，但我却感觉读起来非常适宜，可能并不是抱着优秀产品经理速成的心态去读的原因吧。本书的干货较多，只是摘录部分认为对自己比较有用的内容。
 

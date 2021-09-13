@@ -4,7 +4,7 @@ date: 2020-09-03
 tags: ['经济学', '新制度经济学']
 ---
 
-[![cover](https://cdn.frankzhao.cn/image/books/new_institutional_economics.png?imageMogr2/thumbnail/x300)](https://item.jd.com/11046514.html)
+[![cover](http://cdn.frankzhao.cn/image/books/new_institutional_economics.png?imageMogr2/thumbnail/x300)](https://item.jd.com/11046514.html)
 
 > 新制度经济学是经济学的一个分支，其核心概念为交易费用，是由科斯在 1937 年的论文「企业的性质」中提出的，之后由其学生威廉姆森系统化，而新制度经济学的名称也由威廉姆森所取。新制度经济学强调人的有限理性、交易费用、产权对效率的影响、制度变迁理论等。其主要代表人物包括科斯、阿尔钦、威廉姆森、诺思、德姆塞茨、张五常等。其中科斯、诺思、威廉姆森分别在 1991、1993、2009 年因研究新制度经济学而获得了诺贝尔经济学奖。
 
