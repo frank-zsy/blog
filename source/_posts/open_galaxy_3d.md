@@ -10,7 +10,7 @@ tags: ['3D', 'OpenGalaxy']
 
 在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](http://blog.frankzhao.cn/github_activity_with_wpr/) 和 [「OpenRank 和 OpenGalaxy」](http://blog.frankzhao.cn/open_rank_and_open_galaxy/)两篇博客中，我介绍了关于构建 OpenGalaxy 的算法和一些可改进的方向，主要是记述了如何使用协作网络数据来评判一个开源项目的中心度以及聚类效果，关于算法方面还会有后续的文章进一步展开讨论。
 
-![opengalaxy_2019](https://frank-cdn.opensource-service.com/image/OpenGalaxy_2019.png)
+![opengalaxy_2019](https://cdn.frankzhao.cn/image/OpenGalaxy_2019.png)
 
 但在可视化部分只是给出了 OpenGalaxy 2019 的结果，而没有具体说明如何实现大规模网络的可视化效果，以及在可视化层面可以进一步做出的改进。本文将就这部分进行讨论，并最终给出一些优化方向和进一步的工作。
 

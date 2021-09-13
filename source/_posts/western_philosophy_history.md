@@ -4,7 +4,7 @@ date: 2020-09-06
 tags: ['哲学']
 ---
 
-[![cover](https://frank-cdn.opensource-service.com/image/books/western_philosophy_history.png?imageMogr2/thumbnail/x300)](https://item.jd.com/10164782.html)
+[![cover](https://cdn.frankzhao.cn/image/books/western_philosophy_history.png?imageMogr2/thumbnail/x300)](https://item.jd.com/10164782.html)
 
 > 哲学史，尤其是西方哲学史中最重要的一些著作，记录了人类探索自身本性和社会本质的进程，对于理解人类的社会性和社会制度的演化有巨大的帮助。这本书简要介绍了 27 部西方哲学的经典，可以快速了解西方哲学的历史和重要思想。
 

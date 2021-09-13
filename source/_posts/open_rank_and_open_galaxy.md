@@ -6,7 +6,7 @@ tags: ['开源', '数据分析', '社会网络']
 
 > 在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](/github_activity_with_wpr)一文中，我详细介绍了一种基于 WPR 的全域项目活跃度分析方法，本文将据此进行深入并进一步形式化，使其成为一种更加通用的全域项目分析方法，我将其命名为 OpenRank，而基于 OpenRank 的图构建方法，可以进一步引申出一种图网络可视化方法，我将其称之为 OpenGalaxy，即开源星系。
 
-![opengalaxy_2019](https://frank-cdn.opensource-service.com/image/OpenGalaxy_2019.png)
+![opengalaxy_2019](https://cdn.frankzhao.cn/image/OpenGalaxy_2019.png)
 
 # OpenRank
 
@@ -50,7 +50,7 @@ tags: ['开源', '数据分析', '社会网络']
 
 关于 OpenRank 的结果可以参见上一篇文章，关于 OpenGalaxy 可以参见下图：
 
-![opengalaxy_2019](https://frank-cdn.opensource-service.com/image/OpenGalaxy_2019.png)
+![opengalaxy_2019](https://cdn.frankzhao.cn/image/OpenGalaxy_2019.png)
 
 本图是对 2019 年全域项目在 WPR 和 Louvain 下计算后进行部分节点和边的裁剪后生成的图像，裁剪规则为节点的 OpenRank 值大于 1 且边的关联度大于 2，在该裁剪规则下，剩余了项目共计 171141 个，剩余边 2811489 条。
 
