@@ -10,12 +10,15 @@ date: 2020-08-26
 - 爱好：骑行、自驾
 - 微信：18513109194
 
-## 学习工作经历
+## 学习工作经历与荣誉
 
 ### 2019.08 - 至今
 
-- 同济大学 计算机技术 博士生
-- 2020.08 - [GitHub 2020 数字年报](https://github.com/X-lab2017/github-analysis-report-2020) 开源项目发起人
+- 同济大学 计算机技术、X-lab 开源博士生
+- 2020.12 - [SegmentFault 2020 中国开源先锋 33 人](https://segmentfault.com/a/1190000038597979)
+- 2020.12 - [开源社 2020 开源之星](https://my.oschina.net/u/3727380/blog/4772480)
+- 2020.11 - [InfoQ 2020 中国十大开源杰出贡献人物](https://baijiahao.baidu.com/s?id=1684312095958242405)
+- 2020.08 - [OpenDigger](https://github.com/X-lab2017/open-digger) 开源项目发起人
 - 2020.01 - [Wuhan2020](https://github.com/wuhan2020) 开源项目发起人
 - 2020.01 - [GitHub 2019 数字年报](https://github.com/X-lab2017/github-analysis-report-2019) 开源项目发起人
 - 2019.11 - [Hypertrons](https://github.com/hypertrons/hypertrons) 开源项目发起人
@@ -54,7 +57,7 @@ date: 2020-08-26
 
 ### 开源社
 
-#### 2017.11 - 至今
+#### 2017.11 - 2018.8
 
 - 高校合作组 组长
 - 执行委员会 成员
