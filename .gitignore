@@ -3,3 +3,4 @@ db.json
 public
 ossutil_output
 .ossutil_checkpoint
+source/images*
