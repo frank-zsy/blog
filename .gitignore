@@ -4,3 +4,4 @@ public
 ossutil_output
 .ossutil_checkpoint
 source/images*
+.vscode
