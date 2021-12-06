@@ -15,10 +15,12 @@ date: 2020-08-26
 ### 2019.08 - 至今
 
 - 同济大学 计算机技术、X-lab 开源博士生
+- 2021.2 - 至今 华东师范大学《开源软件开发与社区治理》特聘授课专家
 - 2020.12 - [SegmentFault 2020 中国开源先锋 33 人](https://segmentfault.com/a/1190000038597979)
 - 2020.12 - [开源社 2020 开源之星](https://my.oschina.net/u/3727380/blog/4772480)
 - 2020.11 - [InfoQ 2020 中国十大开源杰出贡献人物](https://baijiahao.baidu.com/s?id=1684312095958242405)
 - 2020.08 - [OpenDigger](https://github.com/X-lab2017/open-digger) 开源项目发起人
+- 2020.07 - 开源社[开源特训营](https://github.com/kaiyuanshe/Open-source-training-camp)特聘讲师
 - 2020.01 - [Wuhan2020](https://github.com/wuhan2020) 开源项目发起人
 - 2020.01 - [GitHub 2019 数字年报](https://github.com/X-lab2017/github-analysis-report-2019) 开源项目发起人
 - 2019.11 - [Hypertrons](https://github.com/hypertrons/hypertrons) 开源项目发起人
