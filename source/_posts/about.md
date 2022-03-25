@@ -78,7 +78,7 @@ date: 2020-08-26
 - 跨浙闽粤湘鄂皖苏沪八省市
 - 8 个 5A 景区：鼓浪屿、南岳衡山、岳麓书院、黄鹤楼、武汉东湖、九华山、西递宏村、黄山
 
-[![img](http://cdn.frankzhao.cn/image/2018-car-route.jpeg?imageMogr2/thumbnail/x400)](http://cdn.frankzhao.cn/image/2018-car-route.jpeg)
+![img](/images/2018-car-route.jpeg?imageMogr2/thumbnail/x400)
 
 ### 2013.05.31 - 2013.07.05
 
@@ -86,4 +86,4 @@ date: 2020-08-26
 - 跨青甘陕豫鲁冀京七省市
 - 7 个 5A 景区：麦积山、西岳华山、龙门石窟、中岳嵩山、清明上河园、孔庙、东岳泰山
 
-[![img](http://cdn.frankzhao.cn/image/2013-bike-route.jpeg?imageMogr2/thumbnail/x400)](http://cdn.frankzhao.cn/image/2013-bike-route.jpeg)
+![img](/images/2013-bike-route.jpeg?imageMogr2/thumbnail/x400)

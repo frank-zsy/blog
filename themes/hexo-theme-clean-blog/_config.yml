@@ -9,7 +9,7 @@ menu:
 menu_title: 主页
 
 # URL of the Home page image
-index_cover: http://cdn.frankzhao.cn/image/home-bg.jpg
+index_cover: /images/home-bg.jpg
 
 # Default post title
 default_post_title: Untitled
@@ -34,7 +34,7 @@ baidu_tongji: d1aea8a668872578c40c332ce40d6719
 addthis:
 
 # set your own favicon
-favicon: http://cdn.frankzhao.cn/image/favicon-32x32.ico
+favicon: /images/favicon-32x32.ico
 
 # Social Accounts
 github_url: https://github.com/frank-zsy
