@@ -8,7 +8,7 @@ tags: ['3D', 'OpenGalaxy']
 
 # OpenGalaxy 回顾
 
-在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](http://blog.frankzhao.cn/github_activity_with_wpr/) 和 [「OpenRank 和 OpenGalaxy」](http://blog.frankzhao.cn/open_rank_and_open_galaxy/)两篇博客中，我介绍了关于构建 OpenGalaxy 的算法和一些可改进的方向，主要是记述了如何使用协作网络数据来评判一个开源项目的中心度以及聚类效果，关于算法方面还会有后续的文章进一步展开讨论。
+在[「加权 PageRank 下的 GitHub 全域项目活跃度分析」](https://blog.frankzhao.cn/github_activity_with_wpr/) 和 [「OpenRank 和 OpenGalaxy」](https://blog.frankzhao.cn/open_rank_and_open_galaxy/)两篇博客中，我介绍了关于构建 OpenGalaxy 的算法和一些可改进的方向，主要是记述了如何使用协作网络数据来评判一个开源项目的中心度以及聚类效果，关于算法方面还会有后续的文章进一步展开讨论。
 
 ![opengalaxy_2019](/images/open_galaxy_2019.png)
 
