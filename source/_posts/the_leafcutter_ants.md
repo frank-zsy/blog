@@ -4,7 +4,7 @@ date: 2020-09-01
 tags: ['读书笔记', '社会学', '生物学']
 ---
 
-[![cover](/images/books/the_leafcutter_ants_cover.png?imageMogr2/thumbnail/x300)](https://www.amazon.com/Leafcutter-Ants-Civilization-Instinct-ebook/dp/B004C436AQ)
+[![cover](/images/books/the_leafcutter_ants_cover.png?x-oss-process=style/400width)](https://www.amazon.com/Leafcutter-Ants-Civilization-Instinct-ebook/dp/B004C436AQ)
 
 > 由于对于开源的理解本质上就是对于社会协作的理解，故所有相关的内容，包括其他生物的社会性本身对于理解人类社会协作也有很大的帮助。
 
