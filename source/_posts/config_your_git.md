@@ -68,11 +68,13 @@ git checkout master
 git fetch upstream master
 git push -f origin FETCH_HEAD:master # 将 FETCH_HEAD 也就是 upstream/master 强制同步到 origin/master
 git reset --hard origin/master # 使用已经完成同步的 origin/master 来强制同步本地 master
-git fetch origin -p | awk '{split($0,a," "); split(a[5],b,"/"); joined=sep=""; for(i=2;i in b;i++){joined=joined sep b[i]; sep="/"}; print joined;}' | xargs git branch -D # 删除本地对应的在 origin 远端已经删除的分支
+git fetch origin -p 2>/dev/stdout >/dev/null | awk '{split($0,a," "); split(a[5],b,"/"); joined=sep=""; for(i=2;i in b;i++){joined=joined sep b[i]; sep="/"}; print joined;}' | xargs git branch -D # 删除本地对应的在 origin 远端已经删除的分支
 ```
 
 之前的第三步，我本来使用的是 rebase and push，但这种情况在 master 分支仅用于同步上游时可行，但有时候我们必须用 master 分支来做一些实验，例如对 issue、PR 模板的修改，需要在 master 分支才会生效，此时可能出现与上游 master 分叉的情况，直接用强制同步的方式最为妥当。
 
 在最后一步，使用了 awk 来处理 git fetch -p 时的输出，因为远端删除的分支在获取到时会输出类似 `- [deleted] (none) -> origin/branch-name` 的信息，所以直接用 awk 将最后的分支名提取出来，然后再用 git branch -D 将其对应的本地分支删除即可。通过这个脚本，可以将最为繁琐的每次在开发分支合并以后的删除工作给自动化了，还是非常方便的。
+
+但这里需要注意的是，在 git fetch 时需要配置 `2>/dev/stdout >/dev/null`，其含义是让 stderr 输出重定向到 stdout，而将 stdout 输出丢弃。这是由于 Git 的实现中，stdout 输出当前操作信息，而其他信息会输出到 stderr 中。而管道是使用 stdout 进行传递的，所以需要做一下重定向以保证输出可以正确传递。Git 中有不少命令的输出都是有类似的性质，在自动化脚本中需要额外注意。
 
 后续会继续更新自己觉得有用的 Git 配置，目的就是将所有的繁琐的机械性工作给自动化，让自己只需要关心项目的开发即可。
