@@ -67,13 +67,27 @@ ChatGPT 提供了非常简单的 API 接口可以用来做聊天任务，底层�
 
 ![](/images/build_gpt_bot_for_doc/sealos_prompts.png)
 
-# 成本对比
+# 对比
+
+## 成本
 
 其实最大的对比还是成本的对比，ChatGPT 由于没有 fine-tune，所以成本就只有每次问答的成本，但由于大部分时候需要带大量的 prompts，其实隐性的成本是挺高的，我们经常可以看到一个简短的问题会带有上千个字符的 prompts。
 
 而 davinci 的 fine-tune 模型的训练成本是较高的，Sealos 文档的训练一共向专属模型中输入了 25 万多个 token，训练时间 1 个小时左右，成本 8 美元。但一旦获得专属模型后，后续的聊天中就不再需要做预检索和背景知识的 prompts 了，可以直接进行关于该领域的知识问答。不仅 token 消耗会变小，而且速度也会更快。
 
 Sealos 4.0 文档的专属模型是 davinci:ft-personal:sealos-doc-2023-03-11-13-00-02 ，有兴趣的同学可以试试，我不确定是否是所有人都可以使用的。
+
+## 效果
+
+这里我比较了一下 DocsGPT 和简单的 fine-tune 模型在 OpenDigger 下的效果。
+
+![](/images/build_gpt_bot_for_doc/open_digger_gpt_3_5.png)
+
+![](/images/build_gpt_bot_for_doc/open_digger_gpt_3.png)
+
+第一张是 DocsGPT 的效果，第二张是 davinci fine-tune 模型的效果。可以看到两个表现都还不错，但也存在明显的差异：基于 ChatGPT 的结果看起来更好一些，因为它具有更好的语言能力，甚至会做一些延伸和扩展，虽然有些是错误的。而专属模型的回答更加简洁，而且与 prompts 有较大的关系，因此对细节的掌握更多一些。
+
+由于专属模型的回答与 prompts 的质量非常相关，所以更好的训练数据一定会让其表现更好。目前只是使用了最简单的 ChatGPT，而且给到的任务可能不足够好，所以结果还有提升的空间。但可以看到 ChatGPT 对于文本的理解还是很强的，尤其是对于一些结构化的文本，例如对表格的理解是很强的。如果进一步优化第一步构造 prompts 数据的逻辑，再加上一些人工的调整和修正，效果应该会更好。
 
 # 未来
 
