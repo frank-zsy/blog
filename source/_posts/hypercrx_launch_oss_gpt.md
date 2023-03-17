@@ -51,6 +51,6 @@ GitHub is often the first stop for many who explore the world of open source. To
 
 Hypercrx on GitHub: https://github.com/hypertrons/hypertrons-crx
 
-Hypercrx on Google: https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc
+Hypercrx on Chrome: https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc
 
 Hypercrx on Edge: https://microsoftedge.microsoft.com/addons/detail/hypercrx/lbbajaehiibofpconjgdjonmkidpcome
