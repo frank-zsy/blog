@@ -8,7 +8,7 @@ tags: ['Hypercrx', 'ChatGPT']
 
 Recently, OpenAI released its latest GPT-4 model. As a research team that has been exploring innovation in the open source field for a long time, X-lab is also thinking about application scenarios based on ChatGPT that can learn from open source project documentation and can be used as a Q&A bot for an open source project. 
 
-Recently, such kinds of projects have also appeared in the open source world. Some are based on document vectorization and retrieval as prompts input to ChatGPT for chat, such as DocsGPT, document.ai, etc. Some try to train their own exclusive models, such as the method introduced in Frank's blog ["How to Build Your Exclusive Knowledge Q&A Robot with ChatGPT"](https://blog.frankzhao.cn/build_gpt_bot_for_doc/).
+Such kinds of projects have also appeared in the open source world. Some are based on document vectorization and retrieval as prompts input to ChatGPT for chat, such as DocsGPT, document.ai, etc. Some try to train their own exclusive models, such as the method introduced in Frank's blog ["How to Build Your Exclusive Knowledge Q&A Robot with ChatGPT"](https://blog.frankzhao.cn/build_gpt_bot_for_doc/).
 
 After multiple attempts, X-lab members feel that the effect of DocsGPT is excellent. Thus, we integrated DocsGPT's capabilities into our browser extension project - Hypercrx. After installing the plugin, users only need to open the corresponding GitHub repository homepage to experience the ChatGPT Q&A capability for the current project immediately. 
 
