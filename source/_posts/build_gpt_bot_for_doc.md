@@ -3,6 +3,8 @@ title: 如何用 ChatGPT 构建你的专属知识问答机器人
 date: 2023-03-12
 ---
 
+> UPDATE 2023-03-16 我也已经将 DocsGPT 的能力集成到了我们实验室的浏览器插件项目中，大家可以在浏览器中访问 GitHub 仓库页面时直接看到对应的聊天窗口，并使用当前的项目文档进行问答。插件项目地址在[这里](https://github.com/hypertrons/hypertrons-crx)，Chrome 插件安装地址在[这里](https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc)，Edge 插件安装地址在[这里](https://microsoftedge.microsoft.com/addons/detail/hypercrx/lbbajaehiibofpconjgdjonmkidpcome)。支持的项目列表和效果预览可以看[这篇博客](https://blog.frankzhao.cn/hypercrx_launch_oss_gpt/)。
+
 # 缘起
 
 从去年底开始 ChatGPT 火爆出圈，大家都在思考如何利用 ChatGPT 的能力来构建自己的应用，我也在想，如果有一个机器人可以学习一下开源项目文档中的信息，那是否就可以作为一个开源项目的问答机器人了呢？
