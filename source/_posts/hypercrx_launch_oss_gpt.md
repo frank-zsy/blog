@@ -39,6 +39,8 @@ Currently, we support the Q&A feature for below projects:
 - [x] [Excelize](https://github.com/qax-os/excelize)
 - [x] [KubeVela](https://github.com/kubevela)
 
+## How to join OSS-GPT
+
 If your project also wants to have such an out-of-the-box chatbot for community Q&A based on ChatGPT, welcome to submit an application in the corresponding [**Issue**](https://github.com/hypertrons/hypertrons-crx/issues/609) of Hypercrx's open source repository. All you need is to forward this article, and we will provide exclusive training for your project documentation within 24 hours, enabling ChatGPT to assist your community in technology Q&A and stay ahead in the AI wave.
 
 # About Hypercrx
